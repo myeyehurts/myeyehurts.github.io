@@ -1,14 +1,14 @@
 body {
 background: blue;
 text-align: center;
+color: white;
+font-family: Korinna;
+font-size: 500px;
+justify-content: center;
 }
 @font-face {
   font-family: Korinna;
   src: url("myeyehurts.github.io
 /OPTIKorinna-Agency.otf") format("opentype");    
 }
-h1 {
-color: white;
-font-family: Korinna;
-font-size: 500px;
-}
+
