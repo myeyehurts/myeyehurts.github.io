@@ -2,11 +2,11 @@ body {
 background: blue;
 }
 @font-face {
-  font-family: "Korinna";
+  font-family: Korinna;
   src: url("css/fonts/OPTIKorinna-Agency.otf") format("opentype");    
 }
 h1 {
 color: white;
 text-align: center;
-font-family: "Korinna";
+font-family: Korinna;
 }
