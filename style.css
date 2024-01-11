@@ -1,5 +1,6 @@
 body {
 background: blue;
+text-align: center;
 }
 @font-face {
   font-family: Korinna;
@@ -8,7 +9,6 @@ background: blue;
 }
 h1 {
 color: white;
-text-align: center;
 font-family: Korinna;
 font-size: 500px;
 }
