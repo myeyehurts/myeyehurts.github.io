@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css" />
-  <title>AAAAAAAAAAAa</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nina</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="images/star.png" rel="icon">
+
 </head>
-<body>
-  <h1> WHAT IS AAAAAAAAA?</h1>
+
+<body onload="gameSetup()">
+    <header>
+        <nav>
+            <a href="bubble-tea.html">bubble tea</a>
+            <a href="animals.html">animals</a>
+            <a class="big" href="index.html">nina</a>
+            <a href="music.html">music</a>
+            <a href="oh-no.html">oh no</a>
+        </nav>
+        <div class="mobileNav">
+            <a><img src="images/arrow-icon.png" alt="arrow to open nav" width="100%" onclick="show()"></a>
+            <div id="links">
+                <a href="index.html">nina</a>
+                <a href="bubble-tea.html">bubble tea</a>
+                <a href="animals.html">animals</a>
+                <a href="music.html">music</a>
+                <a href="oh-no.html">oh no</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div>
+            <h1 class="spin">nina</h1>
+
+            <img class="me" src="images/cute-little-avatar.png"
+                alt="little avatar of me that i did not draw but rather crafted using the magical tools of the internet"
+                width=400px>
+            <div class="frame">
+                <p>Hi, I'm Nina. I study design and stuff. I was originally going to study computer science but wanted
+                    something
+                    less theoretical and more hands on, so I guess I'm here now. I think the coolest job would be one of
+                    those
+                    people who styles mannequins in clothing stores. I actually wanted to be a fashion designer when I
+                    was
+                    little, but didn't have much interest in learning to sew. Ironically at this point in time I have
+                    more
+                    interest in sewing than the drawing part of designing. I've developed something of a bond with
+                    computers
+                    ever since I was little and the highlight of my day was playing flash games on miniclip.com. I
+                    learned
+                    to
+                    code in high school and discovered I really liked it, and boy am I thankful for that because
+                    otherwise I
+                    might have
+                    been in a criminology degree or something silly like that right now. Sorry criminologists. Anyway,
+                    this
+                    website is a bunch of random things that I vaguely care about that I've tried to present in a way
+                    that
+                    will
+                    be entertaining to both you and me. Though it is worth mentioning, I have a bizarre sense of humour.
+                    And
+                    I
+                    was too amused by the spinning text you see above. Scroll on if you dare....</p>
+            </div>
+        </div>
+        <div>
+            <h2>Two Truths and a Lie</h2>
+            <p>Here's a fun little game to learn some useless facts about me. Click on the fact that you think is a lie.
+            </p>
+            <div class="cards">
+                <p class="card" id="card1">fact goes here</p>
+                <p class="card" id="card2">fact goes here</p>
+                <p class="card" id="card3">fact goes here</p>
+            </div>
+            <button id="next-button" onClick="gameSetup()">next</button>
+            <video id="funny-cats" width="800" controls>
+                <source src="videos/funny-cats.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <h2 class="things">things i think are neat!</h2>
+            <div class="neat">
+                <ul>
+                    <li>crafts</li>
+                    <li>rock bands</li>
+                    <li>patches</li>
+                    <li>gift wrapping</li>
+                    <li>blankets</li>
+                    <li>musical instruments</li>
+                    <li>puzzle games</li>
+                    <li>diy clothing</li>
+                    <li>the smell of fire</li>
+                    <li>skulls</li>
+                    <li>fun drinks</li>
+                    <li>baking</li>
+                    <li>gnomes</li>
+                    <li>wandering around</li>
+                    <li>british tv shows</li>
+                    <li>chocolate</li>
+                    <li>thrift stores</li>
+                    <li>dragons</li>
+                    <li>fall</li>
+                    <li>languages</li>
+                    <li>the colour green</li>
+                    <li>bonsai trees</li>
+                </ul>
+                <img src="images/cat-thumbs-up.jpg" width="330px" alt="a cat doing a thumbs up">
+            </div>
+        </div>
+        <div>
+            <h2>ran out of content here's cool vid</h2>
+            <video width="80%" controls>
+                <source src="videos/cat-city.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="index.html" class="footer-link">home</a>
+            <a class="footer-link" href="bubble-tea.html">bubble tea</a>
+            <a href="animals.html" class="footer-link">animals</a>
+        </div>
+
+        <p class="circle">stuff</p>
+        <div class="footer-container">
+            <a class="footer-link" href="music.html">music</a>
+            <a class="footer-link" href="oh-no.html">oh no</a>
+            <a class="footer-link" href="https://i.pinimg.com/564x/5d/f3/fe/5df3fe630d91192528dcfb7c2abf798e.jpg"
+                target="_blank">cool image</a>
+        </div>
+
+        <p class="footer-text">copyright nina sekulic. I DONT OWN ANY OF THE MUSIC IMAGES OR VIDEOS PLS DONT SUE</p>
+
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
