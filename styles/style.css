@@ -261,15 +261,22 @@ footer {
   width: 70%;
 }
 
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 80px;
+@media screen and (max-width: 800px) {
+  .grid_three {
+    grid-template-columns: repeat(2, auto);
   }
-  h3 {
-    font-size: 30px;
+  .grid_two {
+    grid-template-columns: 1fr;
   }
-  p {
-    font-size: 20px;
+  .frame {
+    margin-inline: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    justify-items: center;
+    padding-left: 0;
   }
 }
 
@@ -277,7 +284,7 @@ footer {
   nav {
     display: none;
   }
-  .mobileNav {
+  .mobile_nav {
     display: block;
   }
   .me {
@@ -299,24 +306,18 @@ footer {
   .grid_three {
     grid-template-columns: 1fr;
   }
+  
 }
 
-@media screen and (max-width: 700px) {
-  footer {
-    justify-items: center;
-    padding-left: 0;
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 80px;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .grid_three {
-    grid-template-columns: repeat(2, auto);
+  h3 {
+    font-size: 30px;
   }
-  .grid_two {
-    grid-template-columns: 1fr;
-  }
-  .frame {
-    margin-inline: 5%;
+  p {
+    font-size: 20px;
   }
 }
 

@@ -61,7 +61,6 @@ class Carousel {
 
     //shifts all images over in the appropriate direction on button click
     moveImages() {
-        console.log(this.offset);
         for (let i = 0; i < this.thumbnails.length; i++) {
             this.thumbnails[i].style.transform = "translateX(" + this.offset + "px)"; //offset is the total distance from the start
         }
