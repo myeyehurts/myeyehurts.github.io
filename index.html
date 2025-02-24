@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nina</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="images/n_icon.png" rel="icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="big" href="index.html">nina</a>
+            <a href="about.html">about</a>
+            <a href="code.html">code</a>
+            <a href="design.html">design</a>
+        </nav>
+        <div class="mobile_nav">
+            <a><img src="images/arrow-icon.png" alt="arrow to open nav" width="100%" onclick="showNav()"></a>
+            <div id="links">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="code.html">code</a>
+                <a href="design.html">design</a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <h1 class="spin">nina</h1>
+
+        <img class="me" src="images/me.png" alt="little avatar of me">
+        <div class="frame">
+            <p>Hi, I'm Nina. Welcome to my portfolio website!</p>
+        </div>
+        <br><br><br>
+        <h3>Learn about me and some of my work!</h3>
+        <br>
+        <div class="center_align">
+            <div class="flex_row">
+                <a href="about.html">
+                    <div class="long_button">
+                        <p class="long_button_text">About</p>
+                    </div>
+                </a>
+                <a href="code.html">
+                    <div class="long_button">
+                        <p class="long_button_text">Code</p>
+                    </div>
+                </a>
+                <a href="design.html">
+                    <div class="long_button">
+                        <p class="long_button_text">Design</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="flex_row">
+                <a href="https://github.com/myeyehurts" target ="_blank">
+                    <img src="images/github.png" class="footer_link" width="50px" alt="github logo">
+                </a>
+                <a href="https://www.linkedin.com/in/ninasekulic" target ="_blank">
+                    <img src="images/linkedin.png" class="footer_link" width="50px" alt="linkedin logo">
+                </a>
+            </div>
+            <p>Copyright © 2025 Nina Sekulic</p>
+            <p>All art and code on this site belongs to me. Icon rights are reserved to their respective owners.</p>
+        </footer>
+        <script src="scripts/nav.js"></script>
+</body>
+
+</html>

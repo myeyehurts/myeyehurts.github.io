@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="images/n_icon.png" rel="icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="big" href="index.html">nina</a>
+            <a href="about.html">about</a>
+            <a href="code.html">code</a>
+            <a href="design.html">design</a>
+        </nav>
+        <div class="mobile_nav">
+            <a><img src="images/arrow-icon.png" alt="arrow to open nav" width="100%" onclick="showNav()"></a>
+            <div id="links">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="code.html">code</a>
+                <a href="design.html">design</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>code</h1>
+        <h3>these are some coding projects i've done!</h3>
+        <br><br>
+        <div class="frame">
+            <h2>Spotify Decades</h2>
+            <img src="images/software_icons/java_logo.webp" class="software_icon_img" alt="small icon of java logo">
+            <img src="images/software_icons/spring_logo.png" class="software_icon_img" alt="small icon of spring logo">
+            <img src="images/software_icons/html_logo.png" class="software_icon_img" alt="small icon of html logo">
+            <img src="images/software_icons/css_logo.png" class="software_icon_img" alt="small icon of css logo">
+            <img src="images/software_icons/js_logo.png" class="software_icon_img" alt="small icon of javascript logo">
+            <br><br>
+            <p>I wanted to see the decade distribution of my Spotify library and was disappointed to see that existing
+                Spotify stats websites don't give that information. So naturally I made my own tool.</p>
+            <br>
+            <a href="https://github.com/myeyehurts/spotify-decades" target ="_blank">See the code on Github</a>
+            <br>
+
+            <div class="container">
+                <video id="spotify_video" class="main_media" src="videos/spotify_app_demo.mp4" controls
+                    alt="demo video showing interaction with the app"> </video>
+                <img src="images/code/spotify_img_1.png" id="spotify_demo_img" class="main_media"
+                    alt="enlarged version of the thumbnail image">
+                <div class="carousel">
+                    <img src="images/black-arrow.png" id="spotify_left_arrow" class="arrow" alt="left arrow">
+                    <div class="thumbnail_container" id="spotify_container">
+                        <video src="videos/spotify_app_demo.mp4" class="thumbnails spotify_thumbnails"
+                            alt="demo video showing interaction with the app"></video>
+                        <img src="images/code/spotify_img_1.png" class="thumbnails spotify_thumbnails"
+                            alt="screenshot of the home interface of the app">
+                        <img src="images/code/spotify_img_2.png" class="thumbnails spotify_thumbnails"
+                            alt="screenshot of sample song data displayed in list form">
+                        <img src="images/code/spotify_img_3.png" class="thumbnails spotify_thumbnails"
+                            alt="screenshot of sample song data displayed in bar graph form">
+                        <img src="images/code/spotify_img_4.png" class="thumbnails spotify_thumbnails"
+                            alt="screenshot of sample song data displayed in pie chart form">
+                    </div>
+                    <img src="images/right-arrow.png" id="spotify_right_arrow" class="arrow" alt="right arrow">
+                </div>
+            </div>
+
+            <h3> How it works </h3>
+            <p>This application was made using Spring Boot. It communicates with the Spotify API using HTTP. The user
+                signs in with their Spotify account
+                which causes an authorization code to be obtained and then exchanged for an access token which will be
+                used for all user data requests.
+                The app fetches JSONObjects of the user's liked songs from which the release year of each song is
+                obtained. A new Decade object is made
+                or a tally is added to an existing one. The decade data is stored in an arraylist. The user can view
+                their results as a list or graphed.
+            </p>
+        </div>
+        <br><br>
+        <div class="frame">
+            <h2>Cat Adoption</h2>
+            <img src="images/software_icons/python_logo.png" class="software_icon_img" alt="small icon of python logo">
+            <img src="images/software_icons/django_logo.png" class="software_icon_img" alt="small icon of django logo">
+            <img src="images/software_icons/html_logo.png" class="software_icon_img" alt="small icon of html logo">
+            <img src="images/software_icons/css_logo.png" class="software_icon_img" alt="small icon of css logo">
+            <br><br>
+            <p>This was a final project for BIT2008: Multimedia Data Management. It simulates a mock cat adoption site
+                where users can browse cats and apply to "adopt".</p>
+            <br>
+            <a href="https://github.com/myeyehurts/cat-adoption" target ="_blank">See the code on Github</a>
+            <br>
+
+            <div class="container">
+                <video id="cat_video" class="main_media" src="videos/cat_adoption_demo.mp4" controls
+                    alt="demo video showing interaction with the app"> </video>
+                <img src="images/code/cat_adopt_img_1.png" id="cat_demo_img" class="main_media"
+                    alt="enlarged version of the thumbnail image">
+                <div class="carousel">
+                    <img src="images/black-arrow.png" id="cat_left_arrow" class="arrow" alt="left arrow">
+                    <div class="thumbnail_container" id="cat_container">
+                        <video src="videos/cat_adoption_demo.mp4" class="thumbnails cat_thumbnails"
+                            alt="demo video showing interaction with the app"></video>
+                        <img src="images/code/cat_adopt_img_1.png" class="thumbnails cat_thumbnails"
+                            alt="screenshot of the cat search page">
+                        <img src="images/code/cat_adopt_img_2.png" class="thumbnails cat_thumbnails"
+                            alt="screenshot of the user registration page">
+                        <img src="images/code/cat_adopt_img_3.png" class="thumbnails cat_thumbnails"
+                            alt="screenshot of a user's adoption requests">
+                        <img src="images/code/cat_adopt_img_4.png" class="thumbnails cat_thumbnails"
+                            alt="screenshot of a user in progress making an adoption request">
+                        <img src="images/code/cat_adopt_img_5.png" class="thumbnails cat_thumbnails"
+                            alt="screenshot of a sample user profile">
+                    </div>
+                    <img src="images/right-arrow.png" id="cat_right_arrow" class="arrow" alt="right arrow">
+                </div>
+            </div>
+
+            <h3> How it works </h3>
+            <p>This application was made using Django. User/cat data is stored in an SQLite database unique to each copy
+                of the repository. Cats can be added to the database using the Django admin tool.
+                Users create an account and fill out an adoption profile that they can later edit. They can browse the
+                cats available and filter by various characteristics.
+                Adoption requests can be made using the "adopt" button on the desired cat's profile. A user can view all
+                of their adoption requests as well as cancel them.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="flex_row">
+            <a href="https://github.com/myeyehurts" target ="_blank">
+                <img src="images/github.png" class="footer_link" width="50px" alt="github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/ninasekulic" target ="_blank">
+                <img src="images/linkedin.png" class="footer_link" width="50px" alt="linkedin logo">
+            </a>
+        </div>
+        <p>Copyright © 2025 Nina Sekulic</p>
+        <p>All art and code on this site belongs to me. Icon rights are reserved to their respective owners.</p>
+    </footer>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+
+</html>
