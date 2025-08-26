@@ -87,5 +87,6 @@ class Carousel {
 
 const spotifyCarousel = new Carousel(".spotify_thumbnails", "#spotify_demo_img", "#spotify_video", "#spotify_left_arrow", "#spotify_right_arrow", "#spotify_container");
 const catCarousel = new Carousel(".cat_thumbnails", "#cat_demo_img", "#cat_video", "#cat_left_arrow", "#cat_right_arrow", "#cat_container");
+const turnfableCarousel = new Carousel(".turnfable_thumbnails", "#turnfable_demo_img", "#turnfable_video", "#turnfable_left_arrow", "#turnfable_right_arrow", "#turnfable_container");
 
 

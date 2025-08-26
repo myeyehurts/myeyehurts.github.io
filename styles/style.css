@@ -155,11 +155,16 @@ footer {
   padding: 10px;
 }
 
+
 #spotify_demo_img {
   display: none;
 }
 
 #cat_demo_img {
+  display: none;
+}
+
+#turnfable_demo_img {
   display: none;
 }
 
